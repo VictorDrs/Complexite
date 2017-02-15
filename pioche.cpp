@@ -1,7 +1,7 @@
 #include "pioche.hpp"
 
 void pioche_init(Pioche& pioche, int taille_elt) {
-  //... votre code ici
+  
 }
 
 void pioche_defausse(Pioche& pioche, const void* elt) {
