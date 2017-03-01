@@ -5,7 +5,8 @@ void pioche_init(Pioche& pioche, int taille_elt) {
 }
 
 void pioche_defausse(Pioche& pioche, const void* elt) {
-  //... votre code ici
+	// insertion de la carte défaussée dans la pioche
+	pileDefausse.push_back(&elt);
 }
 
 void pioche_pioche(Pioche& pioche, void* target) {

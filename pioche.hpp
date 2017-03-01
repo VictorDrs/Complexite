@@ -1,6 +1,5 @@
 #ifndef ARAIL_PIOCHE_H
 #define ARAIL_PIOCHE_H
-//#include <stack>
 
 //structure de données
 struct Pioche {

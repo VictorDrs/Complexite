@@ -1,7 +1,6 @@
 #include "jeu.hpp"
 #include "jeu_io.hpp"
 #include "joueur_simple.hpp"
-
 #include <iostream>
 #include <fstream>
 
