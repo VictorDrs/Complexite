@@ -1,6 +1,9 @@
 #ifndef ARAIL_PIOCHE_H
 #define ARAIL_PIOCHE_H
+#include <cstdlib>
 #include <vector>
+#include <cstring>
+#include <iostream>
 
 //structure de données
 struct Pioche {
