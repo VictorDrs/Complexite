@@ -2,9 +2,12 @@
 #define ARAIL_JOUEUR_SIMPLE_HPP
 
 #include "jeu.hpp"
+#include <vector>
 
 struct JoueurSimple {
-  //... votre code ici
+  std::vector <Carte> wagons;
+  int points;
+  int mdp;
 } ;
 
 //initialisation
