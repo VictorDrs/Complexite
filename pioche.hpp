@@ -1,11 +1,12 @@
 #ifndef ARAIL_PIOCHE_H
 #define ARAIL_PIOCHE_H
+#include <vector>
 
 //structure de données
 struct Pioche {
 	std::vector <char> pilePioche;
 	std::vector <char> pileDefausse;
-	//int taille_elt;
+	int taille_elt;
 } ;
 
 //initialisation de la pioche.
