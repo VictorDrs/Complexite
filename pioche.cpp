@@ -32,7 +32,7 @@ void pioche_pioche(Pioche& pioche, void* target) {
 	  
 	  // Les données sont bien contiguës en mémoire (voir def vector)
 	  memcpy( target, &pioche.pilePioche.at(index) , pioche.taille_elt );
-	  // Suppression de la dernière carte en mémoire, on applique taille_elt fois la méthode pop_back
+	  
 	  for(int i = 0 ; i < pioche.taille_elt ; i++) {
 		pioche.pilePioche.pop_back();
 	}
@@ -43,7 +43,7 @@ void pioche_melange(Pioche& pioche) {
   
   int j = 0;
    
-   // défausse a udessus de la pioche
+   // défausse au dessus de la pioche
   pioche.pilePioche.insert(pioche.pilePioche.end(), pioche.pileDefausse.begin(), pioche.pileDefausse.end());
    
   pioche.pileDefausse.erase(pioche.pileDefausse.begin(), pioche.pileDefausse.end());
@@ -64,5 +64,5 @@ void pioche_melange(Pioche& pioche) {
 }
 
 void pioche_suppr(Pioche& pioche) {
-  //... votre code ici
+	delete[] &pioche;
 }
