@@ -6,8 +6,12 @@
 
 struct JoueurSimple {
   std::vector <Carte> wagons;
-  int points;
-  int mdp;
+  int points; // points du joueur
+  int id;  // numéro du joueur, ce numéro est unique
+  int mdp; // mot de passe du joueur
+  Objectif joueur_obj; // carte objectif du joueur
+  std::vector<Liaison*> liaison_obj; //tableau contenant les liaisons que le joueur doit faire pour atteindre l'objectif
+
 } ;
 
 //initialisation
