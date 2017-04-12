@@ -30,7 +30,6 @@ void pioche_pioche(Pioche& pioche, void* target) {
 		return;
 	  }
 	  
-	  // Les données sont bien contiguës en mémoire (voir def vector)
 	  memcpy( target, &pioche.pilePioche.at(index) , pioche.taille_elt );
 	  
 	  for(int i = 0 ; i < pioche.taille_elt ; i++) {
@@ -60,9 +59,9 @@ void pioche_melange(Pioche& pioche) {
     memcpy( (void *) &pioche.pilePioche.at(i*pioche.taille_elt) , (void *) temp , pioche.taille_elt);
 
   }
-	delete temp;
+	delete[] temp;
 }
 
 void pioche_suppr(Pioche& pioche) {
-	delete[] &pioche;
+	// pas besoin sinon erreure de segmentation
 }

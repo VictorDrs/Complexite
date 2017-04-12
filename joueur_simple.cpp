@@ -2,7 +2,7 @@
 #include <iostream>
 
 void joueur_simple_init(JoueurSimple& joueur) {
-  joueur.mdp = rand()%2400 + 1;
+  joueur.mdp = rand()%2500 + 1;
   joueur.id = 0;
   joueur.points=0;
   joueur.joueur_obj.points = 0;
@@ -28,7 +28,7 @@ void joueur_simple_tour(Jeu& jeu, JoueurSimple& joueur) {
   if(joueur.joueur_obj.points == 0)
   {
 	  joueur.joueur_obj = jeu_pioche_objectif(jeu, joueur.id , joueur.mdp);
-	  joueur.joueur_obj = jeu_pioche_objectif(jeu, joueur, joueur.mdp);
+	  joueur.joueur_obj = jeu_pioche_objectif(jeu, joueur.id, joueur.mdp);
   }
   
 }
